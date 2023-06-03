@@ -7,7 +7,7 @@ export const TextForm = (props) => {
   const [copyText, setCopyText] = useState("");
   const [className, setClassName] = useState("fa-regular fa-clipboard");
 
-  const arrayOfWords = text.split(" ");
+  const arrayOfWords = text.split(/\s+/);
   const finalArray = [];
   for (let elements in arrayOfWords) {
     if (arrayOfWords[elements] !== "") {
